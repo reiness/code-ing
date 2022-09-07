@@ -1,4 +1,7 @@
 from mencoba import Checker
+from open import Greet
+
+Greet()
 
 x = int(input("Masukkan angka pertama: "))
 y = int(input("Masukkan angka kedua: "))
