@@ -1,2 +1,2 @@
 def Greet():
-    print("Selamat Datang !")
+    print("Selamat Datang di Kalkulator Sederhana !")
