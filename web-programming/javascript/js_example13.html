@@ -1,0 +1,23 @@
+<!-- form input -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script language = "JavaScript">
+        function test () {
+            var val1=document.kirim.T1.value
+            if (val1%2==0)
+                window.alert("bilangan genap")
+            else
+                window.alert("bilangan ganjil")
+        } 
+    </script>
+</head>
+<body>
+    <form method="POST" name="kirim">
+        Bilangan <input type="text" name="T1" size="20">
+        <input type="button" value="Tebak" name="B1" onclick=test()>
+    </form>
+</body>
+</html>
+

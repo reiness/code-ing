@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Example for Form</h2>
+    <form action="/action_page.php" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type = "radio"
+        name = "gender" checked>Male<br>
+        <input type = "radio"
+        name = "gender">Female<br><br>
+        <label for="fpass">Password:</label>
+        <input type="password" id="fpass" name="fpass"><br><br>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo"><br><br>
+        Marital Status :<br>
+        <input type="checkbox" id="married" name="married" value="Married">
+        <label for="married"> Married</label><br>
+        <input type="checkbox" id="single" name="single" value="Single">
+        <label for="single"> Single</label><br><br>
+        <label for="cars">Choose a car:</label><br>
+            <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            </select>
+        
+            <br><br>
+            <label for="Comment">Comment:</label><br>
+        <textarea name = "Comment" id="Comment">
+        </textarea><br>
+        <button type="button">Click Me!</button>
+      
+    </form> 
+</body>
+</html>

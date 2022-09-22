@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+         table, th, td {
+        width:40%;
+        border: 1px solid black;
+      }
+    </style>
+   
+</head>
+<body>
+    <h2>Example of table tag</h2>
+    <table >
+        <caption>Table 1.1. Monthly savings</caption>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+      </table> 
+
+      <br><br>
+      <h2>Example of table tag with thead, tfoot, and tbody</h2>
+      <table style = "width:40%" border = "1">
+        <thead>
+           <tr>
+              <td colspan = "4">This is the head of the table</td>
+           </tr>
+        </thead>
+        
+        <tfoot>
+           <tr>
+              <td colspan = "4">This is the foot of the table</td>
+           </tr>
+        </tfoot>
+        
+        <tbody>
+           <tr>
+              <td style="width:25%">Cell 1</td>
+              <td style="width:25%">Cell 2</td>
+              <td style="width:25%">Cell 3</td>
+              <td style="width:25%">Cell 4</td>
+           </tr>
+        </tbody>
+        
+     </table>
+
+     <br><br>
+     <h2>Example of table tag with colgroup and col</h2>
+     <table>
+        <colgroup>
+          <col span="2" style="background-color:red">
+          <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>3476896</td>
+          <td>My first HTML</td>
+          <td>$53</td>
+        </tr>
+      </table>
+</body>
+</html>

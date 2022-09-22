@@ -1,0 +1,22 @@
+<!-- if ... else -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script language = "JavaScript">
+        function test () {
+            var nilai = prompt("Nilai (0-100): ", 0);
+            var hasil = "";
+            if (nilai >= 60)
+                hasil = "Lulus";
+            else
+                hasil = "Tidak Lulus";
+            document.write("Hasil: " + hasil);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" name="button1" value="Nilai"
+    onclick=test()>
+</body>
+</html>
