@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="Javascript">
+        function ubahWarnaLB(warna) {
+            document.bgColor = warna;
+        }
+
+        function ubahWarnaLD(warna) {
+            document.fgColor = warna;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>TES</h1>
+    <form>
+        <input type="button" value="Latar Belakang Hijau" onclick="ubahWarnaLB('GREEN')">
+        <input type="button" value="Latar Belakang Putih" onclick="ubahWarnaLB('WHITE')">
+
+        <input type="button" value="Teks Merah" onclick="ubahWarnaLD('RED')">
+        <input type="button" value="Teks Biru" onclick="ubahWarnaLD('BLUE')">
+    </form>
+    <script language="Javascript">
+        document.write("<br> Tangal dan Jam : " +
+            document.lastModified);
+    </script>
+    <h1>TESTING</h1>
+</body>
+
+</html>
