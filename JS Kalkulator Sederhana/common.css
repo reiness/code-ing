@@ -1,0 +1,30 @@
+* {
+    margin: 40px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    background-color: var(--primary-background-color);
+    min: height 100vh;
+    display: flex;
+    justify-content: : center;
+    align-items: center;
+}
+
+div {
+    text-align: center;
+}
+
+div h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+div hr {
+    margin: 14px 0;
+}

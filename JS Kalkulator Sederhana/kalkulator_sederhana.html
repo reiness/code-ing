@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" id="linktema" href="tema/default.css">
+
+</head>
+
+<body>
+
+
+    <div>
+
+        <h2> Kalkulator Sederhana</h2>
+        <hr>
+        <input type="number" id="B1" placeholder="Bilangan 1"> <br>
+        <input type="number" id="B2" placeholder="Bilangan 2"> <br>
+
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+        <button id="kali">x</button>
+        <button id="bagi">/</button> <br>
+
+        <input type="number" id="hasil" readonly>
+
+        <select id="pilihtema">
+            <option value="default">Default</option>
+            <option value="dark">Dark</option>
+            <option value="candy">Candy</option>
+            <option value="keqing">Keqing</option>
+        </select>
+
+    </div>
+
+    <script type="text/javascript">
+
+        var val1 = document.getElementById("B1");
+        var val2 = document.getElementById("B2");
+        var result = document.getElementById("hasil");
+
+        document.getElementById("plus").addEventListener("click", function () {
+            result.value = parseInt(val1.value) + parseInt(val2.value);
+        });
+
+        document.getElementById("minus").addEventListener("click", function () {
+            result.value = parseInt(val1.value) - parseInt(val2.value);
+        });
+
+        document.getElementById("kali").addEventListener("click", function () {
+            result.value = parseInt(val1.value) * parseInt(val2.value);
+        });
+
+        document.getElementById("bagi").addEventListener("click", function () {
+            result.value = parseInt(val1.value) / parseInt(val2.value);
+        });
+
+
+        function gantiTema() {
+            const linktema = document.getElementById("linktema");
+            const pilihtema = document.getElementById("pilihtema");
+
+            function activate(jenis) {
+                linktema.setAttribute("href", `tema/${jenis}.css`);
+            }
+
+            pilihtema.addEventListener("change", () => {
+                activate(pilihtema.value);
+            });
+
+        }
+
+        gantiTema();
+        
+    </script>
+
+</body>
+
+</html>
