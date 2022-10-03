@@ -1,0 +1,8 @@
+1st commit 
+Tampilan home  beserta navbar
+
+2nd commit 
+Menambah konten home dan juga page biodata
+
+3rd commit
+Mengganti background-color utk navbar-toggler-icon & menambah page sesuai ketentuan
